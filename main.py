@@ -52,8 +52,10 @@ def main():
         pygame.display.update()
 
     mosaic_to_ampl(board.board)
-    print_board = str(input('Would you like to print the board? (y/n): '))
-    if print_board: print(board.board)
+    
+    global player_made_board
+    player_made_board = board.board
+
     pygame.quit()
 
 if __name__ == '__main__':

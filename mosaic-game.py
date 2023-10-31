@@ -1,8 +1,8 @@
 import pygame
 from board import Board
 from tile import BLACK, WHITE, GREY
-from copy import deepcopy
 import numpy as np
+from main import player_made_board
 
 pygame.init()
 
@@ -47,7 +47,6 @@ class Game:
 
     
     def count_adjecent(self):
-        temp = self.board.tiles_list
         mtx = np.array(self.board.tiles_list)
         mtx.shape = (self.board.num_tiles, self.board.num_tiles)
 
@@ -67,7 +66,10 @@ class Game:
 
 
 def main():
-    starting_pos = [[3, -1, -1, 2, 1], [-1, -1, -1, 2, -1], [-1, -1, 1, -1, 3], [-1, 2, 4, 4, -1], [-1, -1, -1, -1, -1]]
+    try:
+        starting_pos = player_made_board
+    except:
+        starting_pos = [[3, -1, -1, 2, 1], [-1, -1, -1, 2, -1], [-1, -1, 1, -1, 3], [-1, 2, 4, 4, -1], [-1, -1, -1, -1, -1]]
     newGame = Game(starting_pos)
     newGame.main()
 

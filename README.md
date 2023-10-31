@@ -23,8 +23,8 @@ An entry of value n (1, ..., 9) means the sum of the adjecent squares must equal
 
 ### Playing mosaic
 To play the mosaic board you have created with the GUI:
-1. Print the board you have created to the terminal by entering ***y*** when the program prompts you.
-2. Copy the board into the ***starting_pos*** variable in the ***mosaic-game.py*** script on line 73.
+1. Create a board with the GUI as outlined in **Instructions**.
+2. The last board you have created with the GUI will be sent to the ***mosaic-game.py*** script.
 3. Run the ***mosaic-game.py*** script.
 4. To submit the solution of the board press ***ENTER***.
 5. If your solution was elligible, you see ***You won!*** in the terminal, otherwise you see ***Keep trying!***.
