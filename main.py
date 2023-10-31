@@ -52,11 +52,12 @@ def main():
         pygame.display.update()
 
     mosaic_to_ampl(board.board)
-    
-    global player_made_board
-    player_made_board = board.board
+
+    with open('created_board.py', 'w') as f:
+        f.write(f'BOARD = {board.board}')
 
     pygame.quit()
+
 
 if __name__ == '__main__':
     main()

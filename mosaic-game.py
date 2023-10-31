@@ -2,14 +2,17 @@ import pygame
 from board import Board
 from tile import BLACK, WHITE, GREY
 import numpy as np
-from main import player_made_board
+try:
+    from created_board import BOARD
+except:
+    pass
 
 pygame.init()
 
 class Game:
     def __init__(self, starting_pos):
         self.display = pygame.display.set_mode((600, 600), pygame.RESIZABLE)
-        self.board = Board(self.display, board=starting_pos)
+        self.board = Board(self.display, board=starting_pos, num_tiles=len(starting_pos))
         self.starting_pos = starting_pos
         self.running = True
         for tile in self.board.tiles_list:
@@ -67,7 +70,7 @@ class Game:
 
 def main():
     try:
-        starting_pos = player_made_board
+        starting_pos = BOARD
     except:
         starting_pos = [[3, -1, -1, 2, 1], [-1, -1, -1, 2, -1], [-1, -1, 1, -1, 3], [-1, 2, 4, 4, -1], [-1, -1, -1, -1, -1]]
     newGame = Game(starting_pos)
