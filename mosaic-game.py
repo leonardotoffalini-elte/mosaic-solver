@@ -4,8 +4,8 @@ from tile import BLACK, WHITE, GREY
 import numpy as np
 try:
     from created_board import BOARD
-except:
-    pass
+except ModuleNotFoundError:
+    print('You have not created a a board yet. You will be presented with a default board.')
 
 pygame.init()
 
