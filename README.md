@@ -1,6 +1,6 @@
 ## Mosaic to AMPL
 
-This script generates a file for a given mosaic board state that contains the constrains modelled in an LP solver language like AMPL.
+This script generates a file for a given mosaic board state that contains the constraints modelled in an LP solver language like AMPL.
 
 ### Game rules
 
