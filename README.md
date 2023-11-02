@@ -7,8 +7,8 @@ This script generates a file for a given mosaic board state that contains the co
 The mosaic game is played as follows:
 
 1. There is a grid of tiles which can be either black (1) or white (0).
-2. Some of the tiles on the grid contain a number which means that the sum of the adjecent black squares to that tile must equal the number inside. <br />
-   ***NOTE:*** Adjecent means up-down, left-right, diagonally and the inside tile too.
+2. Some of the tiles on the grid contain a number which means that the sum of the adjacent black squares to that tile must equal the number inside. <br />
+   ***NOTE:*** Adjacent means up-down, left-right, diagonally and the inside tile too.
 
 ### Dependencies
 
@@ -22,7 +22,7 @@ To use this script with the provided Graphical User Interface:
 
 1. Run the **_main.py_** script.
 2. With left click increment the value to the tile, with right click decrement the value of the tile.<br />
-   An entry of value n (1, ..., 9) means the sum of the adjecent squares must equal n.
+   An entry of value n (1, ..., 9) means the sum of the adjacent squares must equal n.
 3. When satisfied with the specified values in the tiles close the window, the constraints are saved out in the **_output.txt_** file.
 4. Copy the contents of the **_output.txt_** file into your solver of choice (for example, AMPL).
 
