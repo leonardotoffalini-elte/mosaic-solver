@@ -7,8 +7,8 @@ This script generates a file for a given mosaic board state that contains the co
 The mosaic game is played as follows:
 
 1. There is a grid of tiles which can be either black (1) or white (0).
-2. Some of the tiles on the grid contain a number which means that the sum of the adjecent squares to that tile must equal the number inside.
-   Note: Adjecent means up-down, left-right, diagonally and the inside tile too.
+2. Some of the tiles on the grid contain a number which means that the sum of the adjecent black squares to that tile must equal the number inside.
+   ***NOTE:*** Adjecent means up-down, left-right, diagonally and the inside tile too.
 
 ### Dependencies
 
