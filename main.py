@@ -8,7 +8,7 @@ def mosaic_to_ampl(board: list[list[int]]):
 
     # creating the output file
     with open('output.txt', 'w') as f:
-        f.write('# Note: There is a -1st row and column, and a 5th row and column.\n')
+        f.write(f'# Note: There is a -1st row and column, and a {len(board)}th row and column.\n')
         f.write('# These rows and collumns function as 0 paddings so that the indices will not be out of bounds\n\n')
         f.write(f'set I = -1 .. {len(board)};\n\n')
         f.write('set R = -1 .. 1;\n\n')
